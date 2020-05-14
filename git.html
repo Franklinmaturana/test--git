@@ -60,14 +60,33 @@
         cd carpeta=nos movemos a la carpeta que especifiquemos luego del cd <br>
         nos movemos a la carpeta que usaremos como proyecto y tipeamos git init y ya nuestro proyecto usara git.
         <br>
+        Debemos inicialmente configurar git con nuestro correo y con un usuario para saber <br>
+        que desarrollador es el que esta haciendo los cambios.
+        <br>
+        git config --global user.email "tuemail"
+        git config --global user.name "tunombre"
+        <br>
         luego veremos que archivos y en que estado de los 3 estamos con el comando git status.
         <br>
         donde como apenas comenzamos nos dira que no hay archivos subidos.
         <br>
         pasemos un archivo del working directory al staging area con el comando git add nombre del archivo
         <br>
-        si damos otro git status nos mostrara el archivo en verde y que esta confirmado para subirse
+        si damos otro git status nos mostrara el archivo en verde y que esta esperando ser confirmado para subirse
         <br>
+        a continuacion crearemos nuestro primer snapshot o foto o punto de partida de nuestro proyecto 
+        <br>
+        tipeamos git commit -m "un pequeño comentario del cambio "  <br>
+        y ya tendriamos la primera "foto" con nuestros cambios.
+        <br>
+        con git log vemos el registro de commits que hemos hecho y el mensaje que anteriormente escribimos al hacer el commit. <br>
+        nos dira un id del commit que acabamos de hacer y el autor y fecha que lo hizos <br>
+        si usamos git chekout y realizamos un cambio a algun archivo de los subidos git restaurara los cambios a la version del commit
+        <br>
+        con git diff podemos ver las diferencias del archivo modificado y el del commit
+        <br>
+        para agregar esos cambios realizados al archivo debemos nuevamente pasar del working area <br>
+        al staging area con git add luego con git commit -m " " y listo
     </p>
 </body>
 </html>
