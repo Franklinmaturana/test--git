@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Git</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="h1">¿QUÉ ES GIT</h1>
+    <p>
+        Es el mas popular sistema de control de versiones <br>
+        que como su nombre lo indica controla los cambios que hagas al proyecto <br>
+        optimo para trabajos en equipo.
+    </p>
+    <p>
+        Antes de empezar debemos aprender unos comandos basicos para usar Git <br>
+        En git hay 3 estados el primero workin directory que es donde trabajamos con nuestros archivos <br>
+        staging area que es una parte intermedia donde preparamos los archivos que deseamos guardar <br>
+        y el tercer estado un repositorio que es donde estara guardado nuestros archivos
+
+        <li>
+            <ul>
+                git init: le decimos al sistema que usaremos git en el proyecto 
+            </ul>
+            <ul>
+                git add nombredelarchivo:con esto subimos los archivos del working directory al staging area 
+            </ul>
+            <ul>
+                git status:nos dice en que estado estan los archivos si el working directory,status o repository
+            </ul>
+            <ul>
+                git commit:es cuando ya estamos seguros de los archivos que deseamos subir,y subimos los archivos al repositorio tomando algo como una primera toma del programa
+            </ul>
+            <ul>
+                git push:con este lo subimos a un repositorio a un servidor como la primera version
+            </ul>
+            <ul>
+                git pull:Si estamos trabajando con mas desarrolladores nos trae los cambios que estos han hecho al proyecto fuente
+            </ul>
+            <ul>
+                git clone:descarga una copia desde el servidor al pc.
+            </ul>
+
+        </li>
+    </p>
+
+    <p>
+        Instalacion de Git:
+        Buscamos en el navegador la pagina de git y damos click en download y listo :V es un exe se instala damos click. <br>
+        Al dar el 5 siguiente debemos cambiar la segunda opcion por la tercera <br>
+        para poder usarlo desde el cmd(terminal de windows)
+    </p>
+    <h1>Primer ejemplo de git</h1>
+    <p>
+        creamos una carpeta, y abrimos una terminal con windows+r,<br>
+        escribimos cmd y damos enter.algunos comandos de la terminal. <br>
+        ls=muestra los archivos en la carpeta donde estamos. <br>
+        pwd=muestra el directorio actual. <br>
+        cd carpeta=nos movemos a la carpeta que especifiquemos luego del cd <br>
+        nos movemos a la carpeta que usaremos como proyecto y tipeamos git init y ya nuestro proyecto usara git.
+        <br>
+        luego veremos que archivos y en que estado de los 3 estamos con el comando git status.
+        <br>
+        donde como apenas comenzamos nos dira que no hay archivos subidos.
+        <br>
+        pasemos un archivo del working directory al staging area con el comando git add nombre del archivo
+        <br>
+        si damos otro git status nos mostrara el archivo en verde y que esta confirmado para subirse
+        <br>
+    </p>
+</body>
+</html>
